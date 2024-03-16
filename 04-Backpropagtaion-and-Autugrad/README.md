@@ -4,15 +4,15 @@
 
 이전 예제에서는 간단한 네트워크에서 gradient를 계산했다.
 
-![alt text](image.png)
+![alt text](/assets/images/image.png)
 
 그런데 아래처럼 복잡한 네트워크에서도 manualy하게 gradient를 계산하는 것은 어렵다.
 
-![alt text](image-1.png)
+![alt text](/assets/images/image-1.png)
 
 Pytorch에서는 계산 그래프(Computational graph)와 연쇄법칙(chain rule)로 gradient를 쉽게 계산할 수 있다.
 
-![alt text](image-2.png)
+![alt text](/assets/images/image-2.png){: width="50%" height="50%"}
 
 연쇄법칙에 대해서는 각종 블로그에서 많이들 다루니 패스하고 연쇄법칙을 이용하여 계산 그래프에서 어떻게 손실함수(loss function)에서 가중치(w)에 대한 기울기(gradient)를 구하는지 알아보자.
 
@@ -22,7 +22,7 @@ Pytorch에서는 계산 그래프(Computational graph)와 연쇄법칙(chain rul
 
 ### $loss(w) = s^2 = (\hat{y} - y)^2 = (x*w - y)^2$
 
-![alt text](image-3.png)
+![alt text](/assets/images/image-3.png){: width="50%" height="50%"}
 
 첫 번째로 Forward를 통해 손실(loss)값을 구한다.
 
@@ -32,7 +32,7 @@ Pytorch에서는 계산 그래프(Computational graph)와 연쇄법칙(chain rul
 
 태블릿에 풀어서 작성해보았다.
 
-![alt text](IMG_67666C72F454-1.jpeg)
+![alt text](/assets/images/IMG_67666C72F454-1.jpeg){: width="50%" height="50%"}
 
 # Autograd
 
