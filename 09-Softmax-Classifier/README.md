@@ -51,3 +51,19 @@ print(f"Batch Loss1: {l1.item():.4f} \nBatch Loss2: {l2.data:.4f}")
 # Batch Loss1: 0.4966
 # Batch Loss2: 1.2389
 ```
+
+[실습 코드](https://github.com/jaewoogwak/pytorch-zero-to-all/blob/master/09-Softmax-Classifier/softmax_mnist.ipynb)
+
+### 🚀 Exercise
+
+자연어처리및실습 수업 시간에 배운 [Pytorch Lightning](https://lightning.ai/docs/pytorch/stable/)을 실습 코드에 적용시켜보았다.
+
+[PL 코드](https://github.com/jaewoogwak/pytorch-zero-to-all/blob/master/09-Softmax-Classifier/sofmax_mnist_with_pl.ipynb)
+
+### Reference
+
+-   https://baeseongsu.github.io/posts/pytorch-lightning-introduction/
+
+-   https://lightning.ai/docs/pytorch/stable/starter/introduction.html
+
+-   https://github.com/jaewoogwak/nlp/blob/master/ch02/with_pl.ipynb
