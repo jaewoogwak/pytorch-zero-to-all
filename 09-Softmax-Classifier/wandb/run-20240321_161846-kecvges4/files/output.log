@@ -1,0 +1,107 @@
+  | Name  | Type             | Params
+-------------------------------------------
+0 | model | Net              | 682 K
+1 | loss  | CrossEntropyLoss | 0
+-------------------------------------------
+682 K     Trainable params
+0         Non-trainable params
+682 K     Total params
+2.728     Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_epochs=5` reached.
+No such comm: 48002352def34458bfa140184a79fd57
+No such comm: c471637a02e3462f9ff729ca2cb55e91
+No such comm: 78366b59ef3542e0ad11c779887bb05a
+No such comm: 4c25710a05cc457487357fe7e35dbf67
+No such comm: b7887eab1b904542bd0bfcda677dabd6
+No such comm: 7f6b43353f1e465391f45cb74c0bb7e9
+No such comm: 8a7ef16ac9db436c8b9aa7ffcad9f068
+No such comm: e142577bcf7942c8ba345867eea50ea6
+No such comm: b097300f84b549f4bc47ce68d6bdc186
+No such comm: e901ec7955fb42549b2a4f9d4470e432
+No such comm: deeb7f1b4f814358afaa87e2c74d5f48
+No such comm: 9101837678ac42a49dff808738cb515a
+No such comm: 70f73447f858497d8b9b737c94bc093f
+No such comm: 94a7029d1bb64e86be32eb39f01a9cd8
+No such comm: 2bb1e727b04e4422a333ff5d60788ee6
+No such comm: 1945d46e86a14fc1bec8cb79e0b5b180
+No such comm: 9eb5eb328534410fa10db19ce0a02078
+No such comm: 4caa9ec23f2d462fa763ad18f50a2981
+No such comm: 5e63d97e55ca49bfb4564dd64bdfc38c
+No such comm: 4cd0c55cca29404ba85105e786ce61ce
+No such comm: ac0099fcfdea47f8b4ef6329977e34c6
+No such comm: 07eb709c586e46a790bd2b7ad3f1cf4e
+No such comm: 92f1fe57ea594fea99253b5a6272b4a9
+No such comm: 82e910eca1894078ac3c5f9909b168e7
+No such comm: a42b147045854a85b5290316da50bf13
+No such comm: 2a24584704c6400188b6ec495ce6be79
+No such comm: a410b9531cf44c63af9973128a2bf9c3
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+Restoring states from the checkpoint path at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+Loaded model weights from the checkpoint at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+No such comm: 244c1a0b5dae418bbeee6679e9f173ce
+No such comm: c243437dbaa241e4ad62e3c6dee1973d
+No such comm: 8d740cc3d30547cea23778ff8b834fc8
+No such comm: a63c33044725435f81a5c2f97fda409f
+No such comm: cdcf87f07bee4478882d7d87151f57c9
+No such comm: ccc164068ff9447197d35935e24db1ef
+No such comm: 780664b11fae453fb14e16ca2f3d3d00
+No such comm: fbec2ffa42c7478f85ed52c0d242d327
+No such comm: 461ba0c4e86645be93536a56ab182d29
+No such comm: b998c2beea434b31a21895061f68dd78
+No such comm: 3ce96be0c785481885a5c1481e0202c4
+Requirement already satisfied: torch in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (2.1.0)
+Requirement already satisfied: filelock in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.9.0)
+Requirement already satisfied: typing-extensions in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (4.10.0)
+Requirement already satisfied: sympy in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (1.11.1)
+Requirement already satisfied: networkx in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.1)
+Requirement already satisfied: jinja2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.1.2)
+Requirement already satisfied: fsspec in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (2023.4.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from jinja2->torch) (2.1.1)
+Requirement already satisfied: mpmath>=0.19 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from sympy->torch) (1.3.0)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+Restoring states from the checkpoint path at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+Loaded model weights from the checkpoint at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+No such comm: c6cf61129c104bd3b5700b19d2df52e1
+No such comm: 5344e55e5b174a16bd5b3b1380dd3ed0
+No such comm: 5c4e35dcc807443ca29e670f6f85ed4b
+No such comm: 0e23036d822e4ba88353bf173f0ba695
+No such comm: 59e0d845a14b42f59f6ea9a575c7c0cb
+No such comm: e193979f41b843c2bc1d27bbd5f4742c
+No such comm: 77da159a008e411b9cf47edfea9ed642
+No such comm: 431f582b43cd4e2cbaf8497a4afd5f19
+No such comm: 59d4711227b5403bb10d915c70d48fcd
+No such comm: 0014c214aebe4528aedb180864d0aa6a
+No such comm: 031a55669f4e4263815999de116f9cfa
+Requirement already satisfied: torch in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (2.1.0)
+Requirement already satisfied: filelock in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.9.0)
+Requirement already satisfied: typing-extensions in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (4.10.0)
+Requirement already satisfied: sympy in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (1.11.1)
+Requirement already satisfied: networkx in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.1)
+Requirement already satisfied: jinja2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (3.1.2)
+Requirement already satisfied: fsspec in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch) (2023.4.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from jinja2->torch) (2.1.1)
+Requirement already satisfied: mpmath>=0.19 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from sympy->torch) (1.3.0)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+Restoring states from the checkpoint path at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+Loaded model weights from the checkpoint at ./Practice/kecvges4/checkpoints/epoch=4-step=4690.ckpt
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      avg_test_loss         0.1675793081521988
+      test_accuracy         0.9509999752044678
+        test_loss           0.16804970800876617
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No such comm: 2fa6521287c645bc91f32e5e7319e3d0
+No such comm: 1c260cc86f8d4072938a2c60a6183ece
+No such comm: 969697c2a7a94591bf1e08e58d574a0e
+No such comm: 5861c1899a2744a1a1454fb93fe4331c
+No such comm: e9e3b7e5a45f44f2a2a93f2bf2e738bc
+No such comm: 6971998851d14fbf86aedcbb5785122b
+No such comm: c56288e7148e4481867d657418985b08
+No such comm: 8fe2b2a8abbb417d81d95ebf1ce81a46
+No such comm: a65af8b2d0984f23be5b4211b3f3bf51
+No such comm: 2810c001889f441a90a84fcbe60ecec7

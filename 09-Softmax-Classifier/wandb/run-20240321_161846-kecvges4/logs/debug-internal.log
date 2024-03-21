@@ -1,0 +1,751 @@
+2024-03-21 16:18:46,663 INFO    StreamThr :10931 [internal.py:wandb_internal():86] W&B internal server running at pid: 10931, started at: 2024-03-21 16:18:46.661391
+2024-03-21 16:18:46,665 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status
+2024-03-21 16:18:46,682 INFO    WriterThread:10931 [datastore.py:open_for_write():87] open: ./wandb/run-20240321_161846-kecvges4/run-kecvges4.wandb
+2024-03-21 16:18:46,682 DEBUG   SenderThread:10931 [sender.py:send():378] send: header
+2024-03-21 16:18:46,748 DEBUG   SenderThread:10931 [sender.py:send():378] send: run
+2024-03-21 16:18:46,750 INFO    SenderThread:10931 [sender.py:_maybe_setup_resume():759] checking resume status for None/Practice/kecvges4
+2024-03-21 16:18:47,479 INFO    SenderThread:10931 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240321_161846-kecvges4/files
+2024-03-21 16:18:47,480 INFO    SenderThread:10931 [sender.py:_start_run_threads():1099] run started: kecvges4 with start time 1711005526.662875
+2024-03-21 16:18:47,488 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: check_version
+2024-03-21 16:18:47,488 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: check_version
+2024-03-21 16:18:47,610 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: run_start
+2024-03-21 16:18:47,621 DEBUG   HandlerThread:10931 [system_info.py:__init__():26] System info init
+2024-03-21 16:18:47,621 DEBUG   HandlerThread:10931 [system_info.py:__init__():41] System info init done
+2024-03-21 16:18:47,622 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:18:47,622 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:18:47,622 INFO    HandlerThread:10931 [system_monitor.py:probe():214] Collecting system info
+2024-03-21 16:18:47,622 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:18:47,622 DEBUG   HandlerThread:10931 [system_info.py:probe():150] Probing system
+2024-03-21 16:18:47,623 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:18:47,624 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:18:47,626 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:18:47,627 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:18:47,631 DEBUG   HandlerThread:10931 [system_info.py:_probe_git():135] Probing git
+2024-03-21 16:18:47,652 DEBUG   HandlerThread:10931 [system_info.py:_probe_git():143] Probing git done
+2024-03-21 16:18:47,652 DEBUG   HandlerThread:10931 [system_info.py:probe():198] Probing system done
+2024-03-21 16:18:47,652 DEBUG   HandlerThread:10931 [system_monitor.py:probe():223] {'os': 'macOS-14.2.1-arm64-arm-64bit', 'python': '3.11.4', 'heartbeatAt': '2024-03-21T07:18:47.623122', 'startedAt': '2024-03-21T07:18:46.650111', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/jaewoogwak/pytorch-zero-to-all.git', 'commit': '7bc397f30180eb6223dc2bd58eced28dd16bf9e2'}, 'email': 'jaewoo010207@gmail.com', 'root': '/Users/jaewoogwak/Desktop/dev/pytorch-zero-to-all', 'host': 'gwagjaeuui-MacBookAir.local', 'username': 'jaewoogwak', 'executable': '/Users/jaewoogwak/anaconda3/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 350.1338768005371}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-21 16:18:47,652 INFO    HandlerThread:10931 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-21 16:18:47,652 INFO    HandlerThread:10931 [system_monitor.py:probe():227] Publishing system info
+2024-03-21 16:18:47,652 DEBUG   HandlerThread:10931 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-03-21 16:18:48,486 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240321_161846-kecvges4/files/conda-environment.yaml
+2024-03-21 16:18:57,527 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/conda-environment.yaml
+2024-03-21 16:18:57,595 DEBUG   HandlerThread:10931 [system_info.py:_save_conda():219] Saving conda packages done
+2024-03-21 16:18:57,596 INFO    HandlerThread:10931 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-21 16:18:57,599 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-21 16:18:57,600 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:18:57,600 DEBUG   SenderThread:10931 [sender.py:send():378] send: files
+2024-03-21 16:18:57,600 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-21 16:18:58,150 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-21 16:18:58,150 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: python_packages
+2024-03-21 16:18:58,151 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:18:58,151 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:18:58,152 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:18:58,154 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:18:58,426 INFO    wandb-upload_0:10931 [upload_job.py:push():131] Uploaded file /var/folders/n_/nbl4pgg93n143h_gp4rbmncr0000gn/T/tmp000y8a9cwandb/ab7nlw6t-wandb-metadata.json
+2024-03-21 16:18:58,464 DEBUG   SenderThread:10931 [sender.py:send():378] send: telemetry
+2024-03-21 16:18:58,464 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:18:58,464 DEBUG   SenderThread:10931 [sender.py:send():378] send: telemetry
+2024-03-21 16:18:58,464 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:18:58,464 WARNING SenderThread:10931 [sender.py:send_metric():1316] Seen metric with glob (shouldn't happen)
+2024-03-21 16:18:58,529 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240321_161846-kecvges4/files/requirements.txt
+2024-03-21 16:18:58,529 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240321_161846-kecvges4/files/wandb-metadata.json
+2024-03-21 16:18:58,529 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:18:59,070 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:18:59,072 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:18:59,072 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:18:59,073 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:18:59,073 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:18:59,074 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:18:59,530 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:00,346 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:00,346 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:00,347 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:00,348 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:00,535 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:00,536 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:19:00,998 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:00,999 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:00,999 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:01,000 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:01,545 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:01,714 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:01,715 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:01,715 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:01,717 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:02,546 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:02,644 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:02,645 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:02,645 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:02,646 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:03,497 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:03,498 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:03,499 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:03,499 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:03,500 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:03,546 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:04,260 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:04,261 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:04,261 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:04,264 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:04,552 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:05,044 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:05,044 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:05,045 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:05,045 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:05,556 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:05,757 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:05,758 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:05,759 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:05,759 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:06,471 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:06,472 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:06,472 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:06,474 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:06,562 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:07,187 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:07,188 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:07,188 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:07,191 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:07,567 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:07,833 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:07,833 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:07,833 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:07,834 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:08,547 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:08,548 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:08,549 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:08,550 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:08,551 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:08,568 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:09,269 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:09,271 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:09,271 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:09,272 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:09,570 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:09,935 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:09,937 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:09,937 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:09,938 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:10,483 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:10,483 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:10,483 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:10,484 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:10,576 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:11,032 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:11,032 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:11,033 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:11,033 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:11,461 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:11,462 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:11,462 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:11,463 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:11,577 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:12,130 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:12,130 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:12,130 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:12,131 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:12,579 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:12,686 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:12,687 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:12,687 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:12,687 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:13,154 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:19:13,159 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:19:13,160 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:19:13,253 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:13,394 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:13,394 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:13,395 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:13,582 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:13,898 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:13,899 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:13,900 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:13,900 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:13,901 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:14,585 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:15,094 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:15,095 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:15,096 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:15,097 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:15,589 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:15,736 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:15,737 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:15,737 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:15,739 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:16,370 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:16,371 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:16,371 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:16,371 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:16,593 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:17,270 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:17,272 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:17,272 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:17,274 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:17,600 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:18,287 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:18,288 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:18,288 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:18,290 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:18,598 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:18,975 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:18,976 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:18,980 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:19,210 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:19,211 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:19,602 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:19,603 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/config.yaml
+2024-03-21 16:19:19,710 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:19,711 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:19,711 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:19,713 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:20,534 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:20,535 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:20,536 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:20,538 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:20,606 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:21,424 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:21,425 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:21,425 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:21,426 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:21,609 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:22,391 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:22,392 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:22,392 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:22,393 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:22,614 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:23,163 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:23,164 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:23,165 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:23,167 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:23,619 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:24,086 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:24,086 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:24,087 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:24,088 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:24,625 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:24,826 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:24,827 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:24,827 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:24,827 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:24,828 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:25,447 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:25,448 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:25,449 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:25,450 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:25,625 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:25,969 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:25,970 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:25,970 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:25,970 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:26,631 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:26,698 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:26,699 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:26,699 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:26,700 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:27,420 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:27,420 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:27,421 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:27,422 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:27,636 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:27,985 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:27,986 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:27,986 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:27,987 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:28,156 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:19:28,160 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:19:28,162 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:19:28,630 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:28,631 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:28,631 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:28,632 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:28,642 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:29,372 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:29,373 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:29,374 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:29,375 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:29,646 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:30,122 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:30,123 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:30,124 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:30,125 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:30,125 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:30,652 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:30,862 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:30,862 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:30,863 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:30,863 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:31,578 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:31,578 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:31,578 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:31,579 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:31,652 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:32,241 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:32,243 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:32,243 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:32,244 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:32,653 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:33,015 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:33,016 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:33,016 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:33,016 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:33,627 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:33,628 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:33,628 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:33,629 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:33,655 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:34,221 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:34,222 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:34,222 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:34,224 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:34,659 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:34,875 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:34,877 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:34,877 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:34,880 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:35,602 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:35,603 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:35,603 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:35,604 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:35,605 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:35,664 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:36,230 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:36,230 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:36,231 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:36,231 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:36,669 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:36,806 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:36,807 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:36,807 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:36,808 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:37,390 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:37,391 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:37,391 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:37,392 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:37,673 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:37,879 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:37,880 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:37,880 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:37,881 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:38,567 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:38,568 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:38,568 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:38,569 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:38,684 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:39,141 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:39,141 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:39,141 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:39,142 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:39,655 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:39,656 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:39,656 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:39,658 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:39,688 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:40,185 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:40,187 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:40,187 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:40,187 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:40,690 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:40,726 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:40,728 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:40,728 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:40,728 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:40,729 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:41,393 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:41,393 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:41,394 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:41,394 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:41,692 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:41,977 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:41,977 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:41,977 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:41,979 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:42,614 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:42,615 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:42,615 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:42,616 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:42,698 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:43,160 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:19:43,170 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:19:43,175 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:19:43,317 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:43,485 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:43,486 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:43,487 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:43,699 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:43,996 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:43,997 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:43,997 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:44,000 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:44,619 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:44,620 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:44,620 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:44,621 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:44,700 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:45,196 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:45,197 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:45,197 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:45,197 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:45,696 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:45,697 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:45,697 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:45,698 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:45,703 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:46,098 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:46,099 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:46,099 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:46,099 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:46,100 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:46,490 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:46,492 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:46,492 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:46,493 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:46,706 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:47,003 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:47,003 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:47,004 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:47,004 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:47,419 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:47,420 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:47,420 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:47,421 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:47,632 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:19:47,633 DEBUG   SenderThread:10931 [sender.py:send():378] send: telemetry
+2024-03-21 16:19:47,633 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:19:47,710 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:47,862 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:47,862 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:47,862 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:47,863 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:48,271 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:48,272 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:48,272 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:48,272 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:48,651 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:48,652 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:48,652 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:48,653 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:48,715 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:49,165 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:49,166 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:49,166 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:49,167 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:49,716 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:50,011 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:50,012 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:50,013 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:50,013 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:50,630 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:50,630 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:50,630 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:50,631 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:50,722 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:51,331 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:51,332 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:51,336 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:51,577 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:51,578 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:51,725 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:51,725 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/config.yaml
+2024-03-21 16:19:51,977 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:51,977 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:51,978 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:51,978 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:52,558 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:52,559 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:52,559 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:52,560 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:52,728 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:53,134 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:53,135 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:53,135 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:53,135 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:53,556 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:53,557 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:53,557 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:53,557 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:53,728 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:54,179 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:54,180 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:54,180 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:54,181 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:54,729 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:54,847 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:54,848 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:54,848 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:54,849 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:55,334 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:55,335 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:55,336 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:55,336 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:55,735 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:55,974 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:55,974 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:55,974 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:55,975 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:56,565 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:56,566 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:56,566 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:56,568 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:56,741 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:57,143 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:57,144 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:57,144 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:57,144 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:19:57,145 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:57,739 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:57,739 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:57,740 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:57,740 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:57,745 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:58,161 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:19:58,170 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:58,171 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:58,171 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:19:58,171 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:58,172 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:58,173 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:19:58,610 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:58,611 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:58,611 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:58,611 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:58,748 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:19:59,022 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:19:59,023 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:19:59,023 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:19:59,023 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:19:59,466 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:19:59,466 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:19:59,466 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:19:59,466 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:19:59,467 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:19:59,467 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:19:59,467 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:19:59,467 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:19:59,467 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:19:59,468 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:19:59,468 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:19:59,751 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:20:00,756 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:20:02,616 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:07,640 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:12,658 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:13,169 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:20:13,177 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:20:13,177 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:20:18,434 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:23,455 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:28,173 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:20:28,180 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:20:28,181 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:20:28,560 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:33,572 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:38,588 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:43,173 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:20:43,181 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:20:43,181 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:20:44,495 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:49,515 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:51,264 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: resume
+2024-03-21 16:20:51,264 INFO    HandlerThread:10931 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-21 16:20:51,265 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:20:51,265 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:20:51,266 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:20:51,267 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:20:51,271 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:20:51,279 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:20:51,283 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:20:52,989 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:20:53,667 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:20:53,667 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:20:53,667 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:20:53,667 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:20:53,668 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:20:53,669 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:20:53,669 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:20:53,669 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:20:53,669 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:20:53,669 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:20:53,673 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:20:53,674 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:20:54,740 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:20:54,996 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:20:58,178 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:20:58,186 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:20:58,186 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:20:59,967 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:04,988 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:10,010 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:13,183 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:21:13,191 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:21:13,191 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:21:15,525 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:20,546 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:25,562 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:28,188 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:21:28,192 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:21:28,192 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:21:30,572 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:35,597 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:40,611 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:43,193 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:21:43,197 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:21:43,198 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:21:46,436 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:51,452 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:56,469 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:21:58,198 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:21:58,202 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:21:58,203 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:22:01,473 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:01,684 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: resume
+2024-03-21 16:22:01,684 INFO    HandlerThread:10931 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-21 16:22:01,684 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:22:01,684 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:22:01,685 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:22:01,686 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:22:01,689 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:22:01,691 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:22:01,693 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:22:04,310 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:05,888 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:22:05,888 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:22:05,888 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:22:05,888 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:22:05,889 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:22:05,889 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:22:05,889 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:22:05,889 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:22:05,889 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:22:05,889 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:22:05,889 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:22:05,890 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:22:06,895 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:07,773 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: resume
+2024-03-21 16:22:07,773 INFO    HandlerThread:10931 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-21 16:22:07,773 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:22:07,773 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:22:07,774 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:22:07,775 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:22:07,775 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:22:07,778 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:22:07,780 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:22:08,980 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:22:08,980 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:22:08,980 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:22:08,980 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:22:08,980 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:22:08,980 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:22:08,980 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:22:08,980 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:22:08,981 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:22:08,981 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:22:08,981 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:22:08,981 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:22:09,324 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:11,330 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:12,024 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:13,203 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:22:13,203 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:22:13,204 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:22:17,523 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:22,530 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:27,546 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:28,208 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:22:28,209 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:22:28,209 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:22:33,545 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:35,417 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: resume
+2024-03-21 16:22:35,417 INFO    HandlerThread:10931 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-21 16:22:35,417 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:22:35,417 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:22:35,419 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:22:35,421 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:22:35,421 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:22:35,427 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:22:35,431 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:22:38,428 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:38,578 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:39,425 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:22:39,425 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:22:39,425 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:22:39,425 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:22:39,426 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:22:39,426 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:22:39,426 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:22:39,426 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:22:39,427 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:22:39,427 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:22:39,427 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:22:39,427 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:22:43,213 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:22:43,213 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:22:43,214 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:22:43,942 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: resume
+2024-03-21 16:22:43,942 INFO    HandlerThread:10931 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-21 16:22:43,942 INFO    HandlerThread:10931 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 16:22:43,942 INFO    SystemMonitor:10931 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 16:22:43,942 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 16:22:43,943 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 16:22:43,943 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-21 16:22:43,952 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 16:22:43,956 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:43,967 INFO    SystemMonitor:10931 [interfaces.py:start():190] Started network monitoring
+2024-03-21 16:22:44,830 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 16:22:44,831 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:22:44,831 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:22:44,831 DEBUG   SenderThread:10931 [sender.py:send():378] send: metric
+2024-03-21 16:22:44,832 DEBUG   SenderThread:10931 [sender.py:send():378] send: history
+2024-03-21 16:22:44,832 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 16:22:44,832 INFO    SenderThread:10931 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 16:22:44,834 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: pause
+2024-03-21 16:22:44,834 INFO    HandlerThread:10931 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-21 16:22:44,834 INFO    HandlerThread:10931 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 16:22:44,835 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 16:22:44,835 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 16:22:44,835 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 16:22:44,835 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 16:22:44,835 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-21 16:22:44,835 DEBUG   SystemMonitor:10931 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 16:22:44,835 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 16:22:44,836 INFO    HandlerThread:10931 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 16:22:44,836 DEBUG   SenderThread:10931 [sender.py:send():378] send: stats
+2024-03-21 16:22:45,458 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/wandb-summary.json
+2024-03-21 16:22:45,458 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:46,463 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:47,469 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/output.log
+2024-03-21 16:22:49,899 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:54,914 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:22:58,218 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:22:58,218 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:22:58,219 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:23:00,402 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:01,521 INFO    Thread-12 :10931 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240321_161846-kecvges4/files/config.yaml
+2024-03-21 16:23:05,762 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:10,781 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:13,220 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:23:13,220 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:23:13,223 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:23:16,461 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:21,479 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:26,493 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:28,225 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:23:28,225 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:23:28,227 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:23:31,542 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:36,560 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:41,576 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:43,228 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:23:43,230 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:23:43,230 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:23:46,589 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:51,614 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:56,637 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:23:58,231 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 16:23:58,232 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:23:58,232 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:24:02,597 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:24:07,621 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:24:12,632 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 16:24:13,232 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 16:24:13,233 DEBUG   SenderThread:10931 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 16:24:13,236 DEBUG   HandlerThread:10931 [handler.py:handle_request():146] handle_request: internal_messages

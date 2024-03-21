@@ -1,0 +1,1 @@
+{"train_loss": 0.28637397289276123, "epoch": 5, "trainer/global_step": 4690, "_timestamp": 1711005764.830413, "_runtime": 238.16753816604614, "_step": 93, "test_loss": 0.16804970800876617, "avg_test_loss": 0.1675793081521988, "test_accuracy": 0.9509999752044678}
