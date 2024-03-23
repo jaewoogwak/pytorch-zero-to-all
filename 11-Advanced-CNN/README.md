@@ -22,7 +22,7 @@ CNN의 필터 크기가 1x1, 3x3, 5x5.. 등 다양하다.
 
 > Inception module처럼 1x1 filter이후 5x5 or 3x3 filter를 거치는 것과 바로 5x5 filter를 거치는 것을 비교하자. 그럼 후자가 더 낫지 않나? 전자(Inception module)는 두 번의 Convolution이 필요한데?
 
-<img src="/assets/images/why_1x1_convolution" width="500" height="500">
+<img src="/assets/images/why_1x1_convolution.png" width="500" height="500">
 
 근데 1x1을 추가하면 월등한 operation 감소를 보였다. (약 10배)
 
@@ -32,13 +32,13 @@ CNN의 필터 크기가 1x1, 3x3, 5x5.. 등 다양하다.
 
 Inception model v3/v4의 구현을 보면 레이어가 매우 깊게 쌓여있다.
 
-<img src="/assets/images/deeper" width="500" height="500">
+<img src="/assets/images/deeper.png" width="500" height="500">
 
 > 그럼 더 깊게 만들수록 더 좋은 거 아닌가?
 
 아니다. 레이어 깊은게 오히려 error가 높다.
 
-<img src="/assets/images/deeper_bad" width="500" height="500">
+<img src="/assets/images/deeper_bad.png" width="500" height="500">
 
 지나치게 깊은 네트워크는 높은 에러를 보였으며 이것은 많은 데이터셋에서 관측된 일반적인 현상이었다.
 
